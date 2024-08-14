@@ -43,6 +43,7 @@ public class EmployeeView {
 			System.out.println("4. Delete Employee b Id ");
 			System.out.println("5. FEtch all employee");
 			System.out.println("6 .Update Employee Salary by Id");
+			System.out.println("7. Close Connection");
 			System.out.println("Enter Option: ");
 
 			switch (sc.nextInt()) {
@@ -111,6 +112,10 @@ public class EmployeeView {
 				}
 			}
 				break;
+			case 7: {
+				EmployeeController.closeConnection();
+				System.out.println("Connection is closed.....");
+			}
 			default:
 				System.out.println("Wrong Info");
 			}
