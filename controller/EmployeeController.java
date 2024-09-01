@@ -127,7 +127,6 @@ public class EmployeeController {
 				li.add(emp);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return li;
@@ -142,7 +141,6 @@ public class EmployeeController {
 				ps.setInt(1, id);
 				ps.executeUpdate();
 			} catch (SQLException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 			return true;
@@ -151,11 +149,11 @@ public class EmployeeController {
 			return false;
 		}
 	}
+	// Close connection
 	public static void closeConnection() {
 		try {
 			con.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
